@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./Position.css">
+	<style>
+		.box {
+			width: 100px;
+			height: 100px;
+			background-color: gray;
+		}
+
+		.a {
+			/* position: static; 포지션 기본값 */
+			position: absolute;
+			left: 50px;
+			top: 50px;
+			z-index: 10;
+			background-color: aqua;
+
+		}
+
+		.b {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			z-index: 0;
+			background-color: blanchedalmond;
+		}
+
+		.c {
+			position: relative;
+			background-color: lime;
+			left: 10px;
+			top: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box" style="height: 200px;"></div>
+	<div class="wrapper">
+
+		<div class="box a">A</div>
+		<div class="box b">B</div>
+		<div class="box c">C</div>
+
+	</div>
+</body>
+
+</html>

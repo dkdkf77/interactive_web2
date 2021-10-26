@@ -1,0 +1,40 @@
+.header {
+  padding: 30px;
+  background: lightgreen;
+}
+
+.content-section {
+  background-color: gray;
+}
+
+.content-seciton::after {
+  content: '';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.section {
+  float: left;
+  padding: 30px;
+}
+
+.primary-section {
+  width: 70%;
+  background: lightblue;
+}
+.secondary-section {
+  width: 30%;
+  background: lightcoral;
+}
+.footer {
+  /* clear: both; */
+  padding: 30px;
+  background: lightseagreen;
+}
+
+.logo {
+  width: 100px;
+  float: left;
+}
